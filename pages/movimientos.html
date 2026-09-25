@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movimientos | Sistema de Stock</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <h2>Stock</h2>
+            <span>Sistema de Gestión</span>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="../index.html" class="menu-item">
+                <span>🏠</span>
+                Inicio
+            </a>
+
+            <a href="productos.html" class="menu-item">
+                <span>📦</span>
+                Productos
+            </a>
+
+            <a href="categorias.html" class="menu-item">
+                <span>🏷️</span>
+                Categorías
+            </a>
+
+            <a href="movimientos.html" class="menu-item active">
+                <span>🔄</span>
+                Movimientos
+            </a>
+
+            <a href="proveedores.html" class="menu-item">
+                <span>🚚</span>
+                Proveedores
+            </a>
+
+            <a href="reportes.html" class="menu-item">
+                <span>📊</span>
+                Reportes
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+
+            <a href="configuracion.html" class="menu-item">
+                <span>⚙️</span>
+                Configuración
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Movimientos</h1>
+                <p>Entradas y salidas de inventario</p>
+            </div>
+                       
+
+            <div class="topbar-actions">
+
+                <button id="theme-toggle"
+                        class="theme-toggle"
+                        title="Cambiar tema">
+                    🌙
+                </button>
+
+                <div class="demo-user">
+                    <span>👤</span>
+                    Usuario Demo
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="page-content">
+
+            <div class="page-header">
+
+                <div>
+                    <h2>Movimientos de stock</h2>
+                    <p>
+                        Consulta las entradas y salidas registradas
+                        en el inventario.
+                    </p>
+                </div>
+
+                <button class="primary-button">
+                    + Nuevo movimiento
+                </button>
+
+            </div>
+
+
+            <!-- FILTROS -->
+
+            <div class="toolbar">
+
+                <div class="search-box">
+                    <span>🔎</span>
+
+                    <input
+                        type="text"
+                        placeholder="Buscar producto..."
+                    >
+                </div>
+
+                <select>
+                    <option>Todos los movimientos</option>
+                    <option>Entradas</option>
+                    <option>Salidas</option>
+                </select>
+
+                <select>
+                    <option>Todos los períodos</option>
+                    <option>Hoy</option>
+                    <option>Esta semana</option>
+                    <option>Este mes</option>
+                </select>
+
+            </div>
+
+
+            <!-- TABLA -->
+
+            <div class="table-container">
+
+                <table class="data-table">
+
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Producto</th>
+                            <th>Tipo</th>
+                            <th>Cantidad</th>
+                            <th>Motivo</th>
+                            <th>Usuario</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>25/09/2026</td>
+                            <td>Café Tradicional</td>
+
+                            <td>
+                                <span class="movement entrada">
+                                    ↑ Entrada
+                                </span>
+                            </td>
+
+                            <td>+20</td>
+
+                            <td>Compra proveedor</td>
+
+                            <td>Administrador</td>
+
+                            <td>
+                                <button class="table-action">⋮</button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>25/09/2026</td>
+                            <td>Bebida 1.5L</td>
+
+                            <td>
+                                <span class="movement salida">
+                                    ↓ Salida
+                                </span>
+                            </td>
+
+                            <td>-6</td>
+
+                            <td>Venta</td>
+
+                            <td>Usuario Demo</td>
+
+                            <td>
+                                <button class="table-action">⋮</button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>24/09/2026</td>
+                            <td>Arroz 1 Kg</td>
+
+                            <td>
+                                <span class="movement entrada">
+                                    ↑ Entrada
+                                </span>
+                            </td>
+
+                            <td>+30</td>
+
+                            <td>Reposición</td>
+
+                            <td>Administrador</td>
+
+                            <td>
+                                <button class="table-action">⋮</button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>24/09/2026</td>
+                            <td>Detergente líquido</td>
+
+                            <td>
+                                <span class="movement salida">
+                                    ↓ Salida
+                                </span>
+                            </td>
+
+                            <td>-3</td>
+
+                            <td>Venta</td>
+
+                            <td>Usuario Demo</td>
+
+                            <td>
+                                <button class="table-action">⋮</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <p class="demo-note">
+                Datos utilizados únicamente con fines demostrativos.
+            </p>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>
