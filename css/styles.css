@@ -909,3 +909,187 @@ body.dark-mode .placeholder {
     }
 
 }
+/* ==============================
+   FIADOS
+================================= */
+
+.debt-summary {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(200px, 280px));
+
+    gap: 16px;
+
+    margin-bottom: 20px;
+}
+
+
+.fiado-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(280px, 0.8fr)
+        minmax(450px, 1.5fr);
+
+    gap: 20px;
+}
+
+
+.fiado-search {
+    margin-bottom: 16px;
+}
+
+
+/* CLIENTES */
+
+.debt-client {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px;
+
+    margin-bottom: 8px;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    background: var(--background);
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.debt-client:hover {
+    border-color: var(--primary);
+}
+
+.debt-client div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.debt-client span {
+    color: var(--text-secondary);
+
+    font-size: 12px;
+}
+
+.active-client {
+    border-color: var(--primary);
+}
+
+
+/* DETALLE DE DEUDA */
+
+.client-debt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.client-code {
+    color: var(--text-secondary);
+
+    font-size: 12px;
+}
+
+.client-debt-header h3 {
+    margin-top: 4px;
+}
+
+
+.current-debt {
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+
+    gap: 4px;
+}
+
+.current-debt span {
+    color: var(--text-secondary);
+
+    font-size: 12px;
+}
+
+.current-debt strong {
+    font-size: 22px;
+}
+
+
+/* HISTORIAL */
+
+.debt-history {
+    margin-top: 20px;
+}
+
+.history-header,
+.history-row {
+    display: grid;
+
+    grid-template-columns:
+        130px 1fr 110px;
+
+    gap: 12px;
+
+    padding: 12px 8px;
+}
+
+.history-header {
+    color: var(--text-secondary);
+
+    font-size: 12px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.history-row {
+    font-size: 14px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.history-row strong {
+    text-align: right;
+}
+
+
+.debt-add {
+    color: #dc2626;
+}
+
+.debt-payment {
+    color: #16a34a;
+}
+
+
+.debt-button {
+    margin-top: 20px;
+
+    width: 100%;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .fiado-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .debt-summary {
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fiados | Sistema de Stock</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <h2>Stock</h2>
+            <span>Sistema de Gestión</span>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="../index.html" class="menu-item">
+                <span>🏠</span>
+                Inicio
+            </a>
+
+            <a href="productos.html" class="menu-item active">
+                <span>📦</span>
+                Productos
+            </a>
+
+            <a href="categorias.html" class="menu-item">
+                <span>🏷️</span>
+                Categorías
+            </a>
+
+            <a href="ventas.html" class="menu-item">
+                <span>💰</span>
+                Ventas
+            </a>
+
+            <a href="movimientos.html" class="menu-item">
+                <span>🔄</span>
+                Movimientos
+            </a>
+
+            <a href="clientes.html" class="menu-item active">
+                <span>👥</span>
+                Clientes
+            </a>
+            
+            <a href="fiados.html" class="menu-item active">
+                <span>📒</span>
+                Fiados
+            </a>
+
+            <a href="proveedores.html" class="menu-item">
+                <span>🚚</span>
+                Proveedores
+            </a>
+
+            <a href="reportes.html" class="menu-item">
+                <span>📊</span>
+                Reportes
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+
+            <a href="configuracion.html" class="menu-item">
+                <span>⚙️</span>
+                Configuración
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+        <div>
+            <h1>Fiados</h1>
+            <p>Control de deudas y abonos de clientes</p>
+        </div>
+
+            <div class="topbar-actions">
+
+                <button id="theme-toggle"
+                        class="theme-toggle"
+                        title="Cambiar tema">
+                    🌙
+                </button>
+
+                <div class="demo-user">
+                    <span>👤</span>
+                    Usuario Demo
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="page-content">
+
+            <div class="page-header">
+
+                <div>
+                    <h2>Control de fiados</h2>
+                    <p>
+                        Consulta las deudas pendientes y registra
+                        los abonos realizados por clientes.
+                    </p>
+                </div>
+
+                <button class="primary-button">
+                    + Registrar abono
+                </button>
+
+            </div>
+
+
+            <div class="debt-summary">
+
+                <div class="stat-card">
+                    <span class="stat-icon">📒</span>
+
+                    <div>
+                        <p>Deuda total</p>
+                        <h3>$26.770</h3>
+                    </div>
+                </div>
+
+
+                <div class="stat-card">
+                    <span class="stat-icon">👥</span>
+
+                    <div>
+                        <p>Clientes con deuda</p>
+                        <h3>2</h3>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="fiado-layout">
+
+
+                <!-- CLIENTES CON DEUDA -->
+
+                <div class="panel">
+
+                    <div class="panel-header">
+                        <h3>Clientes con deuda</h3>
+                    </div>
+
+
+                    <div class="search-box fiado-search">
+
+                        <span>🔎</span>
+
+                        <input
+                            type="text"
+                            placeholder="Buscar nombre o código..."
+                        >
+
+                    </div>
+
+
+                    <div class="debt-client active-client">
+
+                        <div>
+                            <strong>Juan Pérez</strong>
+                            <span>CLI-0001</span>
+                        </div>
+
+                        <strong>$17.870</strong>
+
+                    </div>
+
+
+                    <div class="debt-client">
+
+                        <div>
+                            <strong>Pedro Rojas</strong>
+                            <span>CLI-0003</span>
+                        </div>
+
+                        <strong>$8.900</strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DETALLE -->
+
+                <div class="panel">
+
+                    <div class="client-debt-header">
+
+                        <div>
+                            <span class="client-code">
+                                CLI-0001
+                            </span>
+
+                            <h3>Juan Pérez</h3>
+                        </div>
+
+
+                        <div class="current-debt">
+
+                            <span>Deuda actual</span>
+
+                            <strong>$17.870</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="debt-history">
+
+                        <div class="history-header">
+
+                            <span>Fecha</span>
+                            <span>Movimiento</span>
+                            <span>Monto</span>
+
+                        </div>
+
+
+                        <div class="history-row">
+
+                            <span>25/09/2026</span>
+
+                            <span>
+                                Compra fiada
+                            </span>
+
+                            <strong class="debt-add">
+                                + $5.370
+                            </strong>
+
+                        </div>
+
+
+                        <div class="history-row">
+
+                            <span>21/09/2026</span>
+
+                            <span>
+                                Abono
+                            </span>
+
+                            <strong class="debt-payment">
+                                - $5.000
+                            </strong>
+
+                        </div>
+
+
+                        <div class="history-row">
+
+                            <span>18/09/2026</span>
+
+                            <span>
+                                Compra fiada
+                            </span>
+
+                            <strong class="debt-add">
+                                + $12.500
+                            </strong>
+
+                        </div>
+
+
+                        <div class="history-row">
+
+                            <span>15/09/2026</span>
+
+                            <span>
+                                Compra fiada
+                            </span>
+
+                            <strong class="debt-add">
+                                + $5.000
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="primary-button debt-button">
+                        Registrar abono
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <p class="demo-note">
+                Datos utilizados únicamente con fines demostrativos.
+            </p>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>
