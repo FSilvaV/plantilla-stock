@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Categorías | Sistema de Stock</title>
+    <title>Clientes | Sistema de Stock</title>
 
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -27,12 +27,12 @@
                 Inicio
             </a>
 
-            <a href="productos.html" class="menu-item">
+            <a href="productos.html" class="menu-item active">
                 <span>📦</span>
                 Productos
             </a>
 
-            <a href="categorias.html" class="menu-item active">
+            <a href="categorias.html" class="menu-item">
                 <span>🏷️</span>
                 Categorías
             </a>
@@ -47,11 +47,11 @@
                 Movimientos
             </a>
 
-            <a href="clientes.html" class="menu-item">
+            <a href="clientes.html" class="menu-item active">
                 <span>👥</span>
                 Clientes
             </a>
-            
+
             <a href="proveedores.html" class="menu-item">
                 <span>🚚</span>
                 Proveedores
@@ -81,8 +81,8 @@
         <header class="topbar">
 
             <div>
-                <h1>Categorías</h1>
-                <p>Organización de productos</p>
+                <h1>Productos</h1>
+                <p>Administración del inventario</p>
             </div>
 
             <div class="topbar-actions">
@@ -108,115 +108,156 @@
             <div class="page-header">
 
                 <div>
-                    <h2>Categorías de productos</h2>
+                    <h2>Listado de clientes</h2>
                     <p>
-                        Organiza los productos del inventario
-                        según su categoría.
+                        Consulta y administra los clientes registrados.
                     </p>
                 </div>
 
                 <button class="primary-button">
-                    + Nueva categoría
+                    + Nuevo cliente
                 </button>
 
             </div>
 
 
+            <!-- BÚSQUEDA -->
+
             <div class="toolbar">
 
                 <div class="search-box">
+
                     <span>🔎</span>
 
                     <input
                         type="text"
-                        placeholder="Buscar categoría..."
+                        placeholder="Buscar por nombre o código..."
                     >
+
                 </div>
 
             </div>
 
+
+            <!-- TABLA -->
 
             <div class="table-container">
 
                 <table class="data-table">
 
                     <thead>
+
                         <tr>
-                            <th>Categoría</th>
-                            <th>Descripción</th>
-                            <th>Productos</th>
+                            <th>Código</th>
+                            <th>Cliente</th>
+                            <th>Teléfono</th>
+                            <th>Deuda actual</th>
                             <th>Estado</th>
                             <th></th>
                         </tr>
+
                     </thead>
+
 
                     <tbody>
 
                         <tr>
-                            <td>🥫 Abarrotes</td>
-                            <td>Productos de despensa y alimentación</td>
-                            <td>48</td>
+
+                            <td>CLI-0001</td>
 
                             <td>
-                                <span class="status normal">
-                                    Activa
+                                <strong>Juan Pérez</strong>
+                            </td>
+
+                            <td>+56 9 5555 1234</td>
+
+                            <td>$17.870</td>
+
+                            <td>
+                                <span class="status warning">
+                                    Con deuda
                                 </span>
                             </td>
 
                             <td>
                                 <button class="table-action">⋮</button>
                             </td>
+
                         </tr>
 
 
                         <tr>
-                            <td>🥤 Bebidas</td>
-                            <td>Bebidas, jugos y productos líquidos</td>
-                            <td>32</td>
+
+                            <td>CLI-0002</td>
+
+                            <td>
+                                <strong>María Soto</strong>
+                            </td>
+
+                            <td>+56 9 4444 5678</td>
+
+                            <td>$0</td>
 
                             <td>
                                 <span class="status normal">
-                                    Activa
+                                    Al día
                                 </span>
                             </td>
 
                             <td>
                                 <button class="table-action">⋮</button>
                             </td>
+
                         </tr>
 
 
                         <tr>
-                            <td>🧹 Limpieza</td>
-                            <td>Productos de aseo y limpieza</td>
-                            <td>27</td>
+
+                            <td>CLI-0003</td>
 
                             <td>
-                                <span class="status normal">
-                                    Activa
+                                <strong>Pedro Rojas</strong>
+                            </td>
+
+                            <td>+56 9 3333 9012</td>
+
+                            <td>$8.900</td>
+
+                            <td>
+                                <span class="status warning">
+                                    Con deuda
                                 </span>
                             </td>
 
                             <td>
                                 <button class="table-action">⋮</button>
                             </td>
+
                         </tr>
 
 
                         <tr>
-                            <td>🍬 Confites</td>
-                            <td>Dulces, chocolates y snacks</td>
-                            <td>17</td>
+
+                            <td>CLI-0004</td>
+
+                            <td>
+                                <strong>Carolina Díaz</strong>
+                            </td>
+
+                            <td>+56 9 2222 3456</td>
+
+                            <td>$0</td>
 
                             <td>
                                 <span class="status normal">
-                                    Activa
+                                    Al día
                                 </span>
                             </td>
 
                             <td>
                                 <button class="table-action">⋮</button>
                             </td>
+
                         </tr>
 
                     </tbody>
