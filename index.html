@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Stock | Demo</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- MENÚ LATERAL -->
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+                <h2>Stock</h2>
+                <span>Sistema de Gestión</span>
+            </div>
+
+            <nav class="sidebar-menu">
+
+                <a href="#" class="menu-item active">
+                    <span>🏠</span>
+                    Inicio
+                </a>
+
+                <a href="pages/productos.html" class="menu-item">
+                    <span>📦</span>
+                    Productos
+                </a>
+
+                <a href="pages/categorias.html" class="menu-item">
+                    <span>🏷️</span>
+                    Categorías
+                </a>
+
+                <a href="pages/movimientos.html" class="menu-item">
+                    <span>🔄</span>
+                    Movimientos
+                </a>
+
+                <a href="pages/proveedores.html" class="menu-item">
+                    <span>🚚</span>
+                    Proveedores
+                </a>
+
+                <a href="pages/reportes.html" class="menu-item">
+                    <span>📊</span>
+                    Reportes
+                </a>
+
+            </nav>
+
+            <div class="sidebar-footer">
+
+                <a href="pages/configuracion.html" class="menu-item">
+                    <span>⚙️</span>
+                    Configuración
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-content">
+
+            <!-- HEADER -->
+            <header class="topbar">
+
+                <div>
+                    <h1>Panel principal</h1>
+                    <p>Resumen general del sistema</p>
+                </div>
+
+                <div class="demo-user">
+                    <span>👤</span>
+                    Usuario Demo
+                </div>
+
+            </header>
+
+
+            <!-- DASHBOARD -->
+            <section class="dashboard">
+
+                <div class="welcome">
+                    <h2>Bienvenido</h2>
+                    <p>
+                        Desde este panel podrás visualizar y administrar
+                        la información general de tu negocio.
+                    </p>
+                </div>
+
+
+                <!-- TARJETAS -->
+                <div class="stats">
+
+                    <div class="stat-card">
+                        <span class="stat-icon">📦</span>
+
+                        <div>
+                            <p>Productos</p>
+                            <h3>124</h3>
+                        </div>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <span class="stat-icon">⚠️</span>
+
+                        <div>
+                            <p>Stock bajo</p>
+                            <h3>8</h3>
+                        </div>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <span class="stat-icon">🚚</span>
+
+                        <div>
+                            <p>Proveedores</p>
+                            <h3>12</h3>
+                        </div>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <span class="stat-icon">🔄</span>
+
+                        <div>
+                            <p>Movimientos hoy</p>
+                            <h3>36</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- CONTENIDO INFERIOR -->
+                <div class="dashboard-grid">
+
+                    <div class="panel">
+
+                        <div class="panel-header">
+                            <h3>Movimientos recientes</h3>
+                            <button>Ver todos</button>
+                        </div>
+
+                        <p class="placeholder">
+                            Aquí se mostrarán las últimas entradas y salidas
+                            registradas en el sistema.
+                        </p>
+
+                    </div>
+
+
+                    <div class="panel">
+
+                        <div class="panel-header">
+                            <h3>Alertas de stock</h3>
+                        </div>
+
+                        <p class="placeholder">
+                            Aquí aparecerán productos con stock bajo
+                            o que necesiten reposición.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
