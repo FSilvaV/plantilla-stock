@@ -1186,3 +1186,136 @@ body.dark-mode .placeholder {
     }
 
 }
+/* ==============================
+   INTERACCION DE VENTAS
+================================= */
+
+.payment-option {
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.payment-option.selected {
+    border-color: var(--primary);
+
+    background: var(--primary);
+
+    color: white;
+}
+
+
+.payment-details {
+    margin-top: 16px;
+}
+
+
+.payment-box {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    padding: 16px;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    background: var(--background);
+}
+
+
+.payment-box input,
+.payment-box select {
+    width: 100%;
+
+    padding: 10px 12px;
+
+    border: 1px solid var(--border);
+    border-radius: 6px;
+
+    background: var(--surface);
+
+    color: var(--text-primary);
+}
+
+
+.payment-message {
+    color: var(--text-secondary);
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+.change-result {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-top: 10px;
+
+    border-top: 1px solid var(--border);
+}
+
+
+.demo-client {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px;
+
+    border: 1px solid var(--border);
+    border-radius: 6px;
+
+    background: var(--surface);
+}
+
+
+.demo-client div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.demo-client span {
+    color: var(--text-secondary);
+
+    font-size: 12px;
+}
+
+
+.selected-client {
+    margin-top: 8px;
+}
+
+
+.selected-client-card {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    padding: 12px;
+
+    border-left: 4px solid var(--primary);
+
+    background: var(--surface);
+
+    border-radius: 6px;
+}
+
+
+.selected-client-card span {
+    color: var(--text-secondary);
+
+    font-size: 12px;
+}

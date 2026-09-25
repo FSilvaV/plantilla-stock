@@ -56,7 +56,7 @@
                 <span>📒</span>
                 Fiados
             </a>
-            
+
             <a href="proveedores.html" class="menu-item">
                 <span>🚚</span>
                 Proveedores
@@ -204,15 +204,24 @@
                         <strong>$5.370</strong>
                     </div>
 
-                    <div class="payment-section">
-                        <label>Forma de pago</label>
-                        <div class="payment-options">
-                            <button>💵 Efectivo</button>
-                            <button>💳 Débito</button>
-                            <button>💳 Crédito</button>
-                            <button>📒 Fiado</button>
-                        </div>
+                    <div class="payment-options">
+                        
+                        <button class="payment-option" data-payment="efectivo">
+                            💵 Efectivo
+                        </button>
+                        <button class="payment-option" data-payment="debito">
+                            💳 Débito
+                        </button>
+                        <button class="payment-option" data-payment="credito">
+                            💳 Crédito
+                        </button>
+                        <button class="payment-option" data-payment="fiado">
+                            📒 Fiado
+                        </button>
+
                     </div>
+
+                    <div id="payment-details" class="payment-details"></div>
 
                     <button class="primary-button confirm-sale">
                         Confirmar venta
