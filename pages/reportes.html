@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reportes | Sistema de Stock</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <h2>Stock</h2>
+            <span>Sistema de Gestión</span>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="../index.html" class="menu-item">
+                <span>🏠</span>
+                Inicio
+            </a>
+
+            <a href="productos.html" class="menu-item">
+                <span>📦</span>
+                Productos
+            </a>
+
+            <a href="categorias.html" class="menu-item">
+                <span>🏷️</span>
+                Categorías
+            </a>
+
+            <a href="ventas.html" class="menu-item">
+                <span>💰</span>
+                Ventas
+            </a>
+
+            <a href="movimientos.html" class="menu-item">
+                <span>🔄</span>
+                Movimientos
+            </a>
+
+            <a href="clientes.html" class="menu-item">
+                <span>👥</span>
+                Clientes
+            </a>
+
+            <a href="fiados.html" class="menu-item">
+                <span>📒</span>
+                Fiados
+            </a>
+
+            <a href="proveedores.html" class="menu-item">
+                <span>🚚</span>
+                Proveedores
+            </a>
+
+            <a href="reportes.html" class="menu-item active">
+                <span>📊</span>
+                Reportes
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+
+            <a href="configuracion.html" class="menu-item">
+                <span>⚙️</span>
+                Configuración
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Reportes</h1>
+                <p>Consulta y genera información del negocio</p>
+            </div>
+
+            <div class="topbar-actions">
+
+                <button id="theme-toggle"
+                        class="theme-toggle"
+                        title="Cambiar tema">
+                    🌙
+                </button>
+
+                <div class="demo-user">
+                    <span>👤</span>
+                    Usuario Demo
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="page-content">
+
+            <div class="page-header">
+
+                <div>
+                    <h2>Centro de reportes</h2>
+                    <p>
+                        Consulta información de ventas,
+                        inventario y movimientos del negocio.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="reports-grid">
+
+                <div class="report-card">
+
+                    <div class="report-icon">💰</div>
+
+                    <div class="report-info">
+                        <h3>Ventas</h3>
+
+                        <p>
+                            Resumen de ventas realizadas
+                            durante un período determinado.
+                        </p>
+
+                        <span>
+                            Ventas · Totales · Medios de pago
+                        </span>
+                    </div>
+
+                    <button class="primary-button">
+                        Generar reporte
+                    </button>
+
+                </div>
+
+
+                <div class="report-card">
+
+                    <div class="report-icon">📦</div>
+
+                    <div class="report-info">
+                        <h3>Inventario actual</h3>
+
+                        <p>
+                            Consulta el stock disponible
+                            de todos los productos.
+                        </p>
+
+                        <span>
+                            Productos · Stock · Valor
+                        </span>
+                    </div>
+
+                    <button class="primary-button">
+                        Generar reporte
+                    </button>
+
+                </div>
+
+
+                <div class="report-card">
+
+                    <div class="report-icon">⚠️</div>
+
+                    <div class="report-info">
+                        <h3>Stock bajo</h3>
+
+                        <p>
+                            Productos que necesitan
+                            reposición de inventario.
+                        </p>
+
+                        <span>
+                            Producto · Stock · Estado
+                        </span>
+                    </div>
+
+                    <button class="primary-button">
+                        Generar reporte
+                    </button>
+
+                </div>
+
+
+                <div class="report-card">
+
+                    <div class="report-icon">🔄</div>
+
+                    <div class="report-info">
+                        <h3>Movimientos</h3>
+
+                        <p>
+                            Historial de entradas y salidas
+                            realizadas en el inventario.
+                        </p>
+
+                        <span>
+                            Fecha · Producto · Tipo · Usuario
+                        </span>
+                    </div>
+
+                    <button class="primary-button">
+                        Generar reporte
+                    </button>
+
+                </div>
+
+
+                <div class="report-card">
+
+                    <div class="report-icon">📒</div>
+
+                    <div class="report-info">
+                        <h3>Fiados pendientes</h3>
+
+                        <p>
+                            Resumen de clientes que mantienen
+                            deudas pendientes.
+                        </p>
+
+                        <span>
+                            Cliente · Deuda · Último movimiento
+                        </span>
+                    </div>
+
+                    <button class="primary-button">
+                        Generar reporte
+                    </button>
+
+                </div>
+
+
+                <div class="report-card">
+
+                    <div class="report-icon">🚚</div>
+
+                    <div class="report-info">
+                        <h3>Proveedores</h3>
+
+                        <p>
+                            Información general de los
+                            proveedores registrados.
+                        </p>
+
+                        <span>
+                            Proveedor · Contacto · Productos
+                        </span>
+                    </div>
+
+                    <button class="primary-button">
+                        Generar reporte
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <p class="demo-note">
+                Los reportes corresponden a una demostración
+                visual y no generan archivos reales.
+            </p>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>
