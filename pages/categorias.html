@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Categorías | Sistema de Stock</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <h2>Stock</h2>
+            <span>Sistema de Gestión</span>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="../index.html" class="menu-item">
+                <span>🏠</span>
+                Inicio
+            </a>
+
+            <a href="productos.html" class="menu-item">
+                <span>📦</span>
+                Productos
+            </a>
+
+            <a href="categorias.html" class="menu-item active">
+                <span>🏷️</span>
+                Categorías
+            </a>
+
+            <a href="movimientos.html" class="menu-item">
+                <span>🔄</span>
+                Movimientos
+            </a>
+
+            <a href="proveedores.html" class="menu-item">
+                <span>🚚</span>
+                Proveedores
+            </a>
+
+            <a href="reportes.html" class="menu-item">
+                <span>📊</span>
+                Reportes
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+
+            <a href="configuracion.html" class="menu-item">
+                <span>⚙️</span>
+                Configuración
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Categorías</h1>
+                <p>Organización de productos</p>
+            </div>
+
+            <div class="topbar-actions">
+
+                <button id="theme-toggle"
+                        class="theme-toggle"
+                        title="Cambiar tema">
+                    🌙
+                </button>
+
+                <div class="demo-user">
+                    <span>👤</span>
+                    Usuario Demo
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="page-content">
+
+            <div class="page-header">
+
+                <div>
+                    <h2>Categorías de productos</h2>
+                    <p>
+                        Organiza los productos del inventario
+                        según su categoría.
+                    </p>
+                </div>
+
+                <button class="primary-button">
+                    + Nueva categoría
+                </button>
+
+            </div>
+
+
+            <div class="toolbar">
+
+                <div class="search-box">
+                    <span>🔎</span>
+
+                    <input
+                        type="text"
+                        placeholder="Buscar categoría..."
+                    >
+                </div>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table class="data-table">
+
+                    <thead>
+                        <tr>
+                            <th>Categoría</th>
+                            <th>Descripción</th>
+                            <th>Productos</th>
+                            <th>Estado</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>🥫 Abarrotes</td>
+                            <td>Productos de despensa y alimentación</td>
+                            <td>48</td>
+
+                            <td>
+                                <span class="status normal">
+                                    Activa
+                                </span>
+                            </td>
+
+                            <td>
+                                <button class="table-action">⋮</button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>🥤 Bebidas</td>
+                            <td>Bebidas, jugos y productos líquidos</td>
+                            <td>32</td>
+
+                            <td>
+                                <span class="status normal">
+                                    Activa
+                                </span>
+                            </td>
+
+                            <td>
+                                <button class="table-action">⋮</button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>🧹 Limpieza</td>
+                            <td>Productos de aseo y limpieza</td>
+                            <td>27</td>
+
+                            <td>
+                                <span class="status normal">
+                                    Activa
+                                </span>
+                            </td>
+
+                            <td>
+                                <button class="table-action">⋮</button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>🍬 Confites</td>
+                            <td>Dulces, chocolates y snacks</td>
+                            <td>17</td>
+
+                            <td>
+                                <span class="status normal">
+                                    Activa
+                                </span>
+                            </td>
+
+                            <td>
+                                <button class="table-action">⋮</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <p class="demo-note">
+                Datos utilizados únicamente con fines demostrativos.
+            </p>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>
