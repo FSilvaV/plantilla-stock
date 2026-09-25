@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Movimientos | Sistema de Stock</title>
+    <title>Proveedores | Sistema de Stock</title>
 
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -42,12 +42,12 @@
                 Ventas
             </a>
 
-            <a href="movimientos.html" class="menu-item active">
+            <a href="movimientos.html" class="menu-item">
                 <span>🔄</span>
                 Movimientos
             </a>
 
-            <a href="proveedores.html" class="menu-item">
+            <a href="proveedores.html" class="menu-item active">
                 <span>🚚</span>
                 Proveedores
             </a>
@@ -75,11 +75,11 @@
 
         <header class="topbar">
 
+            
             <div>
-                <h1>Movimientos</h1>
-                <p>Entradas y salidas de inventario</p>
+                <h1>Proveedores</h1>
+                <p>Gestión de proveedores</p>
             </div>
-                       
 
             <div class="topbar-actions">
 
@@ -98,26 +98,27 @@
 
         </header>
 
+
         <section class="page-content">
 
             <div class="page-header">
 
                 <div>
-                    <h2>Movimientos de stock</h2>
+                    <h2>Listado de proveedores</h2>
                     <p>
-                        Consulta las entradas y salidas registradas
-                        en el inventario.
+                        Consulta los proveedores asociados
+                        al inventario.
                     </p>
                 </div>
 
                 <button class="primary-button">
-                    + Nuevo movimiento
+                    + Nuevo proveedor
                 </button>
 
             </div>
 
 
-            <!-- FILTROS -->
+            <!-- BÚSQUEDA -->
 
             <div class="toolbar">
 
@@ -126,21 +127,14 @@
 
                     <input
                         type="text"
-                        placeholder="Buscar producto..."
+                        placeholder="Buscar proveedor..."
                     >
                 </div>
 
                 <select>
-                    <option>Todos los movimientos</option>
-                    <option>Entradas</option>
-                    <option>Salidas</option>
-                </select>
-
-                <select>
-                    <option>Todos los períodos</option>
-                    <option>Hoy</option>
-                    <option>Esta semana</option>
-                    <option>Este mes</option>
+                    <option>Todos los estados</option>
+                    <option>Activos</option>
+                    <option>Inactivos</option>
                 </select>
 
             </div>
@@ -154,12 +148,11 @@
 
                     <thead>
                         <tr>
-                            <th>Fecha</th>
-                            <th>Producto</th>
-                            <th>Tipo</th>
-                            <th>Cantidad</th>
-                            <th>Motivo</th>
-                            <th>Usuario</th>
+                            <th>Proveedor</th>
+                            <th>Contacto</th>
+                            <th>Teléfono</th>
+                            <th>Productos</th>
+                            <th>Estado</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -167,20 +160,21 @@
                     <tbody>
 
                         <tr>
-                            <td>25/09/2026</td>
-                            <td>Café Tradicional</td>
-
                             <td>
-                                <span class="movement entrada">
-                                    ↑ Entrada
-                                </span>
+                                <strong>Distribuidora Norte</strong>
                             </td>
 
-                            <td>+20</td>
+                            <td>María González</td>
 
-                            <td>Compra proveedor</td>
+                            <td>+56 9 5555 1234</td>
 
-                            <td>Administrador</td>
+                            <td>32</td>
+
+                            <td>
+                                <span class="status normal">
+                                    Activo
+                                </span>
+                            </td>
 
                             <td>
                                 <button class="table-action">⋮</button>
@@ -189,20 +183,21 @@
 
 
                         <tr>
-                            <td>25/09/2026</td>
-                            <td>Bebida 1.5L</td>
-
                             <td>
-                                <span class="movement salida">
-                                    ↓ Salida
-                                </span>
+                                <strong>Comercial Pacífico</strong>
                             </td>
 
-                            <td>-6</td>
+                            <td>Carlos Rojas</td>
 
-                            <td>Venta</td>
+                            <td>+56 9 4444 5678</td>
 
-                            <td>Usuario Demo</td>
+                            <td>18</td>
+
+                            <td>
+                                <span class="status normal">
+                                    Activo
+                                </span>
+                            </td>
 
                             <td>
                                 <button class="table-action">⋮</button>
@@ -211,20 +206,21 @@
 
 
                         <tr>
-                            <td>24/09/2026</td>
-                            <td>Arroz 1 Kg</td>
-
                             <td>
-                                <span class="movement entrada">
-                                    ↑ Entrada
-                                </span>
+                                <strong>Alimentos del Valle</strong>
                             </td>
 
-                            <td>+30</td>
+                            <td>Ana Martínez</td>
 
-                            <td>Reposición</td>
+                            <td>+56 9 3333 9012</td>
 
-                            <td>Administrador</td>
+                            <td>27</td>
+
+                            <td>
+                                <span class="status normal">
+                                    Activo
+                                </span>
+                            </td>
 
                             <td>
                                 <button class="table-action">⋮</button>
@@ -233,20 +229,21 @@
 
 
                         <tr>
-                            <td>24/09/2026</td>
-                            <td>Detergente líquido</td>
-
                             <td>
-                                <span class="movement salida">
-                                    ↓ Salida
-                                </span>
+                                <strong>Distribuciones Central</strong>
                             </td>
 
-                            <td>-3</td>
+                            <td>Pedro Soto</td>
 
-                            <td>Venta</td>
+                            <td>+56 9 2222 3456</td>
 
-                            <td>Usuario Demo</td>
+                            <td>9</td>
+
+                            <td>
+                                <span class="status warning">
+                                    Inactivo
+                                </span>
+                            </td>
 
                             <td>
                                 <button class="table-action">⋮</button>
